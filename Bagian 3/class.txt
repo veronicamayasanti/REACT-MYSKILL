@@ -1,0 +1,36 @@
+functional and class component
+
+cara paling sederhana untuk mendefinisikan komponen adalah dengan javascript function:
+function welcome(props){
+    return <h1> hello, {props.name} </h1>;
+}
+
+fungsi di atas bisa disebut React Component karena menerima argumen objek
+props dan me-return React Element.
+Komponen seperti itu disebut sebagai functional component karena merupakan fungsi javascript.
+
+selain menggunakan fungsi, untuk mendefinisikan React Component juga bisa menggunakan ES6 Class.
+class welcome extends React.Component {
+    render(){
+        return <h1> hello, {this.props.name</h1>; }
+    }
+}
+
+
+Rendering Component
+selain dalam bentuk representasi DOM, element di React juga bisa berbentuk
+komponen yang didefinisikan oleh user:
+
+const element = <welcome name = 'maya' />;
+
+React menyisipkan atribut JSX ke elemen ini sebagai single object.
+object ini dinamakan props:
+
+function welcome(props) {
+    return <h1> hello, {props.name} </h1>;
+}
+const element = <welcome name = 'maya' />;
+ReactDOM.render(
+    element,
+    document.getElementById('root')
+);

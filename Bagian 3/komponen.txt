@@ -1,0 +1,6 @@
+komponen
+komponen pada React secara konsep sama seperti function pada JavaScript,
+perbedaannya adalah jika function menerima sembarang input yang disebut parameter atau argumen
+dan me-return sebuah nilai, komponen menerima input yang disebut props dan me-return React Element
+yang menggambarkan apa yang akan ditampilkan di layar.
+komponen memungkinkan kita untuk membuat UI yang independent, isolated dan reusable sehingga mengurangi pengulangan pada kode.

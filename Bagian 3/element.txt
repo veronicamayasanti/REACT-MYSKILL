@@ -1,0 +1,47 @@
+poin belajar
+
+elemen
+komponen
+functional and class component
+props are read only
+
+---- Element ---- 
+Element adalah blok bangunan terkecil di React, yang menggambarkan apa yang
+akan dilihat oleh user di layar mereka.
+secera sederhana elemen dapat didefinisikan sebagai representasi virtual dari DOM.
+
+Aplikasi React dibuat dengan memanfaatkan satu Element pada file index.html
+yang disebut dengan "root" DOM
+<div id= "root"></div>
+
+semua elemen di dalam root DOM tersebut akan diatur oleh React DOM.
+untuk menampilkan React elemen pada root DOM,
+elemen tersebut dikirim ke ReactDOM.render()
+
+contoh
+const element = <h1> Hello World </h1>;
+ReactDOM.render(element, document.getElementById('root'));
+
+
+
+---- Immutability Element ----
+Element React bersifat immutable, artinya setelah elemen itu dibuat, maka attribute dan 
+children-nya tidak bisa diubah, sehingga satu satunya cara untuk meng-update UI
+adalah dengan membuat elemen baru, dan kemudian di-pass kembali ke
+ReactDOM.render().
+
+function tick() {
+    const element = (
+        <div>
+        <h1> Hello World </h1>
+        <h2> It is {new Date().toLocaleTimeString()}.</h2>
+        </div>
+    );
+    ReactDOM.render(element,document.getElementById('root'));
+}
+setInterval(tick, 1000);
+
+React DOM membandingkan elemen beserta children-nya dengan elemen sebelumnya,
+dan hanya melakukan DOM update pada elemen yang perlu diubah untuk menampilkan DOM terbaru.
+pada contoh potongan kode sebelumnya, elemen yang berubah setiap detiknya hanya terjadi pada
+bagian h2, yakni bagian new Date().toLocaleTimeString()

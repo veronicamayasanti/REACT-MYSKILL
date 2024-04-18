@@ -1,0 +1,18 @@
+props are read only
+
+setiap kali komponen didefinisikan, baik menggunakan function atau class,
+komponen tersebut tidak boleh mengubah props.
+sebagai perbandingan, sifat read only dari props mirip seperti pure function,
+contohnya adalah fungsi sum berikut:
+
+function sum(a,b){
+    return a + b;
+}
+
+fungsi di atas disebut dengan pure function karena tidak pernah mengubah
+input-annya dan selalu me-return nilai yang sama dengan inputan yang sama.
+
+fungsi di bawah disebut impure function karena mengubah input yang diberikan
+function withdraw(account, amount) {
+    account.total -= amount;
+}
