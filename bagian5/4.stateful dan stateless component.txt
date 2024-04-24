@@ -1,0 +1,13 @@
+perbedaan stateful dan stateless
+stateful components adalah komponen menggunakan state, sedangkan
+stateless adalah komponen yang tidak menggunakan state.
+stateful components juga dikenal dengan sebutan Container dan Smart components
+stateless juga dikenal dengan sebutan Presentation dan Dumb components.
+
+
+Nested components
+komponen bersifat reusable atau dapat digunakan kembali.
+hal ini akan sering kita temukan dalam komponen bersarang
+
+komponen bersarang atau Nested Components adalah komponen yang digunakan di dalam komponen.
+

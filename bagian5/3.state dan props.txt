@@ -1,0 +1,8 @@
+state dan props
+state dan props adalah objek khusus yang menyimpan data untuk komponen
+kedua objek ini memiliki cara kerja yang berbeda.
+state adalah objek yang digunakan untuk menyimpan data di dalam komponen, sedangkan
+props adalah objek yang digunakan untuk menyimpan data yang diterima dari luar komponen.
+
+ this.state = {name : "myskill"};  --> this.state.name
+ <komponen name = "myskill"/>  --> this.props.name

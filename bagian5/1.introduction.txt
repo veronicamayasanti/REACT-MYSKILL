@@ -1,0 +1,26 @@
+komponen React 
+komponen di ReactJS dapat dibuat dengan dua cara, yaitu menggunakan fungsi / function dan menggunakan class.
+
+
+functional components
+function Hello() {
+    return <p> ini adalah komponen function </p>
+}
+<Hello/>
+
+
+Class components
+class Hello extends React.Component {
+    render(){
+         return <p> ini adalah komponen function </p>
+    }
+}
+<Hello/>
+
+
+keterangan:
+Nama komponene harus dimulai dengan huruf kapital =  Hello
+disebut elemen JSX = return <p> ini adalah komponen function </p>
+cara menggunakan komponen = <Hello/>
+
+class component dari ReactJS = React.Component

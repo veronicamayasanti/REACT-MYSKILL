@@ -1,0 +1,19 @@
+constructor
+constructor adalah fungsi atau method pada class yang akan dieksekusi saat objek dibuat atau komponen digunakan.
+Konstructor biasanya digunakan untuk melakukan inisialisasi komponen.
+Konstructor hanya ada pada komponen yang dibuat dengan class.
+
+class Hello extends React.Component{
+    constructor(){
+        super(){
+            this.state = {
+                name: "haimayadev"
+            };
+        }
+        render(){
+            return <p> Hai maya developer <p>
+        }
+    }
+}
+
+<Hello/>
