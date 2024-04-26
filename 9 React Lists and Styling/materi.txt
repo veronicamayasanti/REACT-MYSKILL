@@ -1,0 +1,11 @@
+1.React Lists
+Dalam react kita bisa me-render list dengan beberapa tipe perulangan.
+Method map() pada Javascript adalah method yang disarankan untuk digunakan
+
+2. key dalam react lists 
+key memungkinkan kita untuk men-trackig element dalam react.
+dengan adanya key dapat memudahkan kita jika ingin memperbaruhi atau menghapus item,
+hanya item tersebut yang perlu di-render ulang bukan semua item.
+key harus unik untuk setiap siblings, tetapi dapat di duplicate secara global
+umumnya, key harus unik untuk setiap item, array index dapat dijadikan key.
+

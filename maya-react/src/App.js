@@ -10,6 +10,14 @@ import FootBall from './football';
 import Pesanan from './pesanan';
 import Goal from './goal';
 import Garasi from './garasi';
+import Garage from './mobil';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './pages/Layout';
+import Home from './pages/Home';
+import Blogs from './pages/Blogs';
+import Contact from './pages/Contact';
+import NoPage from './pages/NoPage';
+
 
 const phoneData = [
   { name: "oppo", price: 3000000, discont: 30 },
@@ -25,7 +33,7 @@ function MyComponent() {
   return (
     <div>
       <button> {1 + 2}</button>
-      <br/>
+      <br />
       <button> {Date.now()}</button>
     </div>
   );
@@ -35,25 +43,38 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <Title></Title>
+        <img src={logo} className="App-logo" alt="logo" />
+        <Title></Title>
       </header>
       <Body></Body>
       <Header></Header>
       <Change></Change>
       <ChatBox />
       <MyComponent />
-      {phoneData.map((phone,id) => (
+      {phoneData.map((phone, id) => (
         <Product key={id}
-        name={phone.name}
-        price={phone.price}
-        discont={phone.discont}></Product>
-      ) )}
-      <FootBall/>
-      <Pesanan/>
+          name={phone.name}
+          price={phone.price}
+          discont={phone.discont}></Product>
+      ))}
+      <FootBall />
+      <Pesanan />
       <br></br>
       <Goal isGoal={true} />
-      <Garasi mobil= {mobil} />
+      <Garasi mobil={mobil} />
+      <Garage />
+
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element = {<Layout/>}/>
+          <Route index element={<Home />} />
+          <Route path='blogs' element={<Blogs />} />
+          <Route path='contact' element={<Contact />} />
+          <Route path='*' element={<NoPage />} />
+      </Routes>
+      </BrowserRouter>
+
+
     </div>
   );
 }

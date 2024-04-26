@@ -1,0 +1,23 @@
+1. Add React Router
+ketika kita membuat aplikasi React menggunakan create-react-app, 
+maka belum terdapat page routing.
+React Router adalah solusi untuk melakukan navigasi pada aplikasi react.
+kita bisa menambahkan React Router dengan menuliskan syntax berikut pada terminal
+npm i -D react-router-dom  atau npm i -D react-router-dom@latest
+
+
+2. folder structure
+untuk membuat aplikasi React dengan beberapa page routes
+pertama tama mari kita mulai dengan struktur file.
+
+di dalam folder src, membuat folder pages dengan beberapa file:
+src\pages\:
+Layout.js
+Home.js
+Blogs.js
+Contact.js
+NoPage.js
+
+
+3. add router in our app.js
+tahapan pertama untuk membuat routing adalah dengan menambahkan router pada app.js
