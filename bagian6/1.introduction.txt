@@ -1,0 +1,4 @@
+JSX
+
+JSX merupakan singkatan dari Javascript Syntax Extension atau biasa disebut Javascript XML adalah ekstensi yang digunakan React
+Syntax JSX mirip dengan HTML, sehingga mudah untuk menyusun elemen pada komponen React.

@@ -1,0 +1,9 @@
+Menambahkan Event
+Sama halnya dengan HTML DOM events,
+React dapat menampilkan aksi berdasarkan user events.
+React event ditulis dengan aturan camelCase.
+React event handler ditulis dalam "{}"
+
+<button onClick = {shoot}> Take the shot! </button>      ---->> React
+<button onclick= "shoot()"> Take the shot! </button>    ---->>> HTML
+

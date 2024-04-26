@@ -1,0 +1,46 @@
+React element
+
+React Element adalah bagian terkecil dari sebuah aplikasi React.
+React Element digunakan untuk menyusun sebuah komponen.
+Element ini biasanya ditampilkan atau di-render.
+
+tanpa JSX, kita bisa membuat element dengan method:
+
+React.createElement(        ==> fungsi untuk membuat React Element
+    type,           ==> type element yang akan dibuat (string)
+    [props],        ==> atribut untuk element (object properti)
+    [...children]   ==> konten atau anak element (string dan juga object element)
+);
+
+
+3. aturan menulis JSX
+a. penempatan penulisan JSX
+class Component     --> di dalam method "render()"
+functional Component    --> di dalam statement "return()"
+selain itu dapat dituliskan pada variabel       --> dapat digunakan ulang pada komponen lain.
+penulisan JSX untuk > 1 elemen disarankan menggunakan tanda kurung "()"
+
+b. penulisan atribut JSX
+penulisan atribut di JSX = HTML biasa
+hanya saja beberapa atribut perlu ditulis dengan aturan JSX
+contohnya atribut "class" pada JSX perlu ditulis dengan "className"
+const button = <button className="btn btn-defaukt">OK</button>
+class adalah kata kunci yang sudah ada di Javascript untuk membuat class.
+untuk menghindari ambigu disarankan menggunakan className
+lalu untuk atribut event lainnya disarankan menggunakan format camelCase
+const buttons = <button onClick={fungsiHandler}>OK</button>;
+
+
+
+4. Javascript Expression on JSX
+dalam sintax JSX kita bisa membuat ekspresi Javascript dengan kurung kurawal "{...}" 
+Expresi ini dapat ditulis di dalam nilai atribut maupun di dalam konten elemen
+
+function MyComponent() {
+    return (
+        <div>
+        <button> {1+2}</button>
+        <button> {Date.now()}</button>
+        </div>
+    );
+}

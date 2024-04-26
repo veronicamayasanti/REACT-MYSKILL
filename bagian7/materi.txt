@@ -1,0 +1,6 @@
+Displaying Data and Looping in JSX
+
+menampilkan data pada JSX
+membuat perulangan di JSX
+untuk melakukan perulangan di JSX, kita tidak bisa pakai perulangan for dan while seperti di javascript
+ini karena di JSX hanya bisa menjalankan ekspresi saja bukan statement.
