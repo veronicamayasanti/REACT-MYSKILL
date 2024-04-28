@@ -1,7 +1,8 @@
 function NoPage() {
     return (
         <div>
-            <h1>Ini halaman NoPage</h1>
+            <h1>404
+            </h1>
         </div>
     )
 

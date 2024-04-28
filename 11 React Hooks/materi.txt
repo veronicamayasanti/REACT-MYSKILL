@@ -1,0 +1,37 @@
+1. React Hook
+Hooks memungkinkan functional component memiliki akses ke state dan fitur React lainnya.
+oleh karena itu, class component umumnya tidak lagi diperlukan.
+walaupun hooks menggantikan class component, tidak ada rencana untuk menghapus class di React.
+Hooks memungkinkan kita untuk "hook" ke fitur React seperti state dan lifecycle methods.
+
+2. Hook Rules
+Hook hanya bisa dipanggil di dalam functional component React
+Hook hanya dapat dipanggil pada top level of the component
+Hook tidak conditional
+Hook tidak akan berfungsi pada class component React.
+
+
+3. React useState Hook
+React useState Hook memungkinkan kita untuk melacak state dalam functional component
+secara umum mengacu pada data properti yang perlu dilacak dalam suatu aplikasi. 
+
+4. Import dan initialize useState
+untuk menggunakan useState hook, kita perlu meng-import useState pada komponen kita.
+
+import {useState} from "react";
+
+kita menginisialisasi state dengan memanggil useState di functional component
+useState menerima keadaan awal dengan mengembalikan dua nilai:
+* The current state.
+* a function that update the state
+
+function FavoriteColor() {
+    const [color, setColor] = useState("");
+}
+
+
+5. state can be hold
+Hook useState dapat digunakan untuk melacak string, number, boolean, array, objek dan kombinasi apapun dari ini 
+kita dapat membuat beberapa hook state  untuk melacak nilai individual
+
+
