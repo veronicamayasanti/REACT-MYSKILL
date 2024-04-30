@@ -1,0 +1,25 @@
+1. react hooks useEffect
+useEffect Hook memungkinkan kita untuk memberikan side effect  pada components
+beberapa contoh side effect adalah : fetching data, directly updating DOM, dan timer.
+useEffect menerima dua argumen, Argumen kedua adalah opsional
+useEffect(<function>, <dependency>)
+
+
+2. Dependency 
+No dependency passed:
+useEffect(() => {
+    // runs on every render
+})
+
+Array kosong:
+useEffect(() => {
+    // runs only on the first render
+})
+
+props or state values:
+useEffect(() => {
+    // runs on the first render
+    // and any time any dependency value changes
+}, [prop, state]);
+
+
