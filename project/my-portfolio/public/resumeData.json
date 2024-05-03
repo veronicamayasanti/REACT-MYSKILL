@@ -3,24 +3,24 @@
         "name" : "veronica maya santi",
         "description": " saya adalah seorang pengembang web dengan spesialisasi dalam teknologi MERN stack (MongoDB, Express.js, React.js, Node.js). Saya memiliki pengalaman dalam membangun aplikasi web yang responsif, interaktif, dan efisien menggunakan teknologi ini.",
         "image":"profilepic.jpg",
-        "github":"https://github.com/mutiarahmatun",
-        "project":"https://github.com/mutiarahmatun",
+        "github":"https://github.com/veronicamayasanti",
+        "project":"https://github.com/veronicamayasanti",
         "bio": "Ini adalah section biografi aku",
         "contactmessage":"Hello, here I am",
         "email": "myemail@gmail.com",
         "phone": "877-1234-5678",
         "address":{
             "street":"Jl Margonda Raya",
-            "city":"Depok",
-            "state":"West Java",
-            "zip": "16024"
+            "city":"Bogor",
+            "state":"Tenjdo City",
+            "zip": "325339"
         },
-        "website": "https://github.com/mutiarahmatun",
-        "resumedownload":"https://github.com/mutiarahmatun",
+        "website": "https://github.com/veronicamayasanti",
+        "resumedownload":"https://github.com/veronicamayasanti",
         "social":[
           {
             "name": "facebook",
-            "url": "https://github.com/mutiarahmatun",
+            "url": "https://github.com/veronicamayasanti",
             "className": "fa fa-facebook"
           },
           {
@@ -30,17 +30,17 @@
           },
           {
             "name":"linkedin",
-            "url":"https://www.linkedin.com/in/mutia-rahmatun-husna/",
+            "url":"https://www.linkedin.com/in/veronica-maya-santi/",
             "className":"fa fa-linkedin"
           },
           {
             "name":"instagram",
-            "url":"http://instagram.com/mutia.rahmatun",
+            "url":"http://instagram.com/maya.santi",
             "className":"fa fa-instagram"
           },
           {
             "name":"github",
-            "url":"https://github.com/mutiarahmatun",
+            "url":"https://github.com/veronicamayasanti",
             "className":"fa fa-github"
           }
         ]
