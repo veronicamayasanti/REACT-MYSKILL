@@ -46,10 +46,10 @@
         ]
     },
     "resume" : {
-        "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+        "skillmessage":"Menguasai pengembangan web dengan MERN stack. Ahli dalam React untuk antarmuka pengguna yang dinamis, Node.js dan Express untuk backend yang efisien, serta MongoDB untuk manajemen basis data NoSQL",
         "education" : [
             {
-                "school": "Universitas Indonesia",
+                "school": "Universitas Sanata Dharma",
                 "degree": "Bachelor degree of Computer Science",
                 "graduated": "June 2021",
                 "description" : "I am joining gemastik competition"
